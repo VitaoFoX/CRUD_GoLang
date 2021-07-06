@@ -26,7 +26,7 @@ func exec(db *sql.DB, sql string) sql.Result {
 
 func iniciaBanco() {
 
-	db, err := sql.Open("mysql", "root:4553@/")
+	db, err := sql.Open("mysql", "root:123@/")
 	if err != nil {
 		log.Fatal("Erro ao conectar no banco de dados!QQ")
 		panic(err)
@@ -48,7 +48,7 @@ func iniciaBanco() {
 
 func insertPessoa(dados Pessoa) int64 {
 
-	db, err := sql.Open("mysql", "root:4553@/bankDaniel")
+	db, err := sql.Open("mysql", "root:123@/bankVitor")
 	if err != nil {
 		log.Fatal("Erro ao conectar no banco de dados!")
 		panic(err)
