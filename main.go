@@ -24,7 +24,7 @@ func crudVitao(w http.ResponseWriter, req *http.Request) {
 
 	var DadosSlice []Pessoa
 
-	db, err := sql.Open("mysql", "root:4553@/bankVitor")
+	db, err := sql.Open("mysql", "root:123@/bankVitor")
 	if err != nil {
 		log.Fatal("Erro ao conectar no banco de dados!")
 		panic(err)
